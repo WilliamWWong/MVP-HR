@@ -10,17 +10,21 @@ const Timer = ({ timerMinute }: Props) => {
 
   return (
     <>
-      <h3>{breakTime ? "Session Break" : null}</h3>
-      <h3>Timer</h3>
-      <span>{timerMinute}</span>
-      <span>:</span>
-      <span>
-        {timerSecond === 0
-          ? "00"
-          : timerSecond < 10
-          ? "0" + timerSecond
-          : timerSecond}
-      </span>
+      <div className="timer timer-container">
+        <h3>{breakTime ? "Session Break" : null}</h3>
+        <h3>Timer</h3>
+        <div className="timer timer-time">
+          <span>{timerMinute}</span>
+          <span>:</span>
+          <span>
+            {timerSecond === 0
+              ? "00"
+              : timerSecond < 10
+              ? "0" + timerSecond
+              : timerSecond}
+          </span>
+        </div>
+      </div>
     </>
   );
 };

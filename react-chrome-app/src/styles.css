@@ -1,7 +1,64 @@
-#root {
+.app {
   display: flex;
   flex-direction: column;
-  height: 90rem;
+  /* height: 90rem; */
   justify-content: center;
   align-items: center;
+}
+
+.time-settings-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h3 {
+  align-items: center;
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.time-settings {
+  display: flex;
+  margin: 25px 25px;
+  align-items: center;
+}
+
+.button {
+  padding: 5px 12px;
+  margin: 0 10px;
+  height: 25px;
+  background-color: rgb(10, 10, 70);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  box-shadow: 0 1px 5px 2px;
+}
+
+.time-settings--text {
+  font-size: 2rem;
+  margin: 0 10px;
+}
+
+.time-settings--name {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.timer-container {
+  border: 2px solid rgb(10, 10, 70);
+  margin-top: 40px;
+  border-radius: 25px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 1px 5px 2px;
+  padding: 20px;
+}
+
+.timer-time {
+  font-size: 2rem;
 }
