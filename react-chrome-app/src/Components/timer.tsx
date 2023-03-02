@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Button from "./button";
+import TimerControls from "./timercontrols";
 
 type Props = {
   timerMinute?: number;
@@ -25,6 +27,7 @@ const Timer = ({ timerMinute }: Props) => {
           </span>
         </div>
       </div>
+      <TimerControls />
     </>
   );
 };

@@ -10,6 +10,7 @@ function App() {
   // );
   const [breakLength, setBreakLength] = useState<number>(5);
   const [sessionLength, setSessionLength] = useState<number>(25);
+  const [timer, setTimer] = useState<number>(25);
 
   return (
     <>

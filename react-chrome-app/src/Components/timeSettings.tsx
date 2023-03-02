@@ -1,4 +1,4 @@
-import React, { SetStateAction } from "react";
+import React from "react";
 import Button from "./button";
 type Props = {
   settingsName: string;
@@ -22,7 +22,7 @@ const timeSettings = ({ settingsName, time, setState }: Props) => {
         <h3 className="time-settings--name">{settingsName}</h3>
         <div className="time-settings">
           <Button
-            NameofClass={"button--increase"}
+            NameofClass="button--increase"
             buttonLabel={"Up"}
             onClick={changeTimeUp}
           />

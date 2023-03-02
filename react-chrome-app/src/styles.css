@@ -62,3 +62,7 @@ h3 {
 .timer-time {
   font-size: 2rem;
 }
+
+.timer-controls {
+  padding: 20px;
+}
